@@ -1,0 +1,371 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Quicksand", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 24px;
+  color: #9a9a9a;
+}
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.header a {
+  text-decoration: none;
+  color: #433840;
+}
+.header a.active {
+  color: #fea3ac;
+}
+.header a:hover {
+  color: #fea3ac;
+  transition: 300ms ease-in;
+}
+.logotype {
+  max-width: 230px;
+  max-height: 90px;
+}
+
+.header menu {
+  display: flex;
+}
+
+.menu_item {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  padding-left: 32px;
+  list-style-type: none;
+}
+.intro {
+  min-height: 400px;
+  background-size: cover;
+  margin-right: 50px;
+  margin-left: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.intro.about_page {
+  background: url(../img/header.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.svg_style {
+  position: relative;
+}
+.svg_style::before {
+  content: "";
+  width: 100%;
+  height: 130px;
+  position: absolute;
+  background: url(../img/svg/top.svg) center center no-repeat;
+  top: 0;
+  left: 0;
+}
+.svg_style::after {
+  content: "";
+  width: 100%;
+  height: 110px;
+  position: absolute;
+  background: url(../img/svg/bot.svg) center center no-repeat;
+  left: 0;
+  bottom: 0;
+}
+.title {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 62px;
+  color: #ffffff;
+}
+.subtitle {
+  font-family: "Waiting for the Sunrise";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 50px;
+  color: #ffffff;
+}
+
+.about_box {
+  padding-top: 70px;
+  max-width: 1180px;
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+}
+.text:first-child {
+  padding-left: 25px;
+  padding-right: 45px;
+}
+.text:last-child {
+  padding-left: 45px;
+  padding-right: 25px;
+}
+.text article {
+  margin-bottom: 80px;
+}
+.text article:last-child {
+  margin-bottom: 0;
+}
+.text h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 37px;
+  color: #433840;
+}
+.text p {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #9a9a9a;
+}
+.info {
+  background: #fea3ac;
+  padding-top: 60px;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+.info_list {
+  min-height: 600px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.info_item {
+  margin-right: 10px;
+  margin-left: 10px;
+  text-align: center;
+}
+.info_item:first-child {
+  margin-left: 0;
+}
+.info_item:last-child {
+  margin-right: 0;
+}
+.count {
+  font-family: "Waiting for the Sunrise";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 99px;
+  color: #dfeeb6;
+  display: block;
+}
+.info_item h4 {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  color: #ffffff;
+}
+.icon {
+  max-width: 135px;
+  max-height: 135px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+.team {
+  padding-top: 60px;
+}
+.teamtitle {
+  margin-top: 0;
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 62px;
+  color: #433840;
+  text-align: center;
+}
+.teamsubtitle {
+  font-family: "Waiting for the Sunrise";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 50px;
+  color: #f7a1a8;
+  text-align: center;
+  display: block;
+  margin-bottom: 60px;
+}
+
+.team_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.team_member {
+  width: calc(50% - 201px);
+  background: #c9e3f4;
+  border-radius: 5px;
+  margin-bottom: 40px;
+  margin-left: 190px;
+  display: flex;
+  align-items: center;
+}
+.photo img {
+  border-radius: 100%;
+  margin-left: -190px;
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+
+.data {
+  padding-left: 17px;
+}
+.name {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 37px;
+  color: #ffffff;
+}
+.prof {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 25px;
+  color: #433840;
+}
+.data p {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 25px;
+  color: #433840;
+  margin-bottom: 15px;
+}
+
+.social {
+  letter-spacing: 10px;
+}
+
+.team_member:nth-child(2),
+.team_member:nth-child(3) {
+  background: #dfeeb6;
+}
+.team_member:nth-child(3),
+.team_member:nth-child(4) {
+  margin-left: 0;
+  margin-right: 190px;
+}
+
+.team_member:nth-child(3) .photo,
+.team_member:nth-child(4) .photo {
+  order: 2;
+}
+.team_member:nth-child(3) .photo img,
+.team_member:nth-child(4) .photo img {
+  margin-left: 0;
+  margin-right: -190px;
+}
+
+.team_member:nth-child(3) .data,
+.team_member:nth-child(4) .data {
+  order: 1;
+  margin-left: 0;
+  margin-right: 17px;
+  text-align: right;
+}
+.footer {
+  padding-top: 150px;
+  background-image: url(../img/fotback.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.footer_nav {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  padding-bottom: 60px;
+}
+.feed {
+  display: flex;
+  flex-wrap: wrap;
+  width: 25%;
+}
+
+.open {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 37px;
+  color: #ffffff;
+  margin-bottom: 25px;
+}
+.hours li {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 35px;
+  color: #ffffff;
+}
+.time {
+  color: #dfeeb6;
+}
+.numberphone {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 35px;
+  color: #ffffff;
+}
+.cninfo li {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 35px;
+  color: #dfeeb6;
+}
+
+.footfoot {
+  background: #433840;
+  padding: 50px;
+}
+
+.copyright {
+  display: flex;
+  justify-content: space-between;
+}
+
+.feed a {
+  margin-bottom: 20px;
+  margin-left: 30px;
+}
